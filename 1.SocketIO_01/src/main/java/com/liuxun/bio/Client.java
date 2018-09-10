@@ -24,7 +24,7 @@ public class Client {
             out.println("接收到客户端的请求数据...");
             out.println("接收到客户端的请求数据1111...");
             String response = in.readLine();
-            System.out.println("Client: "+response);
+            System.out.println("response: "+response);
 
         }catch (Exception e){
             e.printStackTrace();
