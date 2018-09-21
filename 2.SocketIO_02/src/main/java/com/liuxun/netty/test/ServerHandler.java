@@ -2,6 +2,7 @@ package com.liuxun.netty.test;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 
@@ -18,7 +19,8 @@ public class ServerHandler extends ChannelHandlerAdapter {
         System.out.println("Server: " + request);
         // 写给客户端
         String response = "服务器端反馈信息";
-        ctx.writeAndFlush(Unpooled.copiedBuffer(response.getBytes()));
+        ctx.writeAndFlush(Unpooled.copiedBuffer(response.getBytes()))
+        .addListener(ChannelFutureListener.CLOSE);
     }
 
     @Override
