@@ -8,7 +8,8 @@
     <artifactId>network-programming</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>SocketIO</module>
+        <module>1.SocketIO_01</module>
+        <module>2.SocketIO_02</module>
     </modules>
     <packaging>pom</packaging>
 
