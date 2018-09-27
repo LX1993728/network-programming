@@ -10,6 +10,7 @@
     <modules>
         <module>1.SocketIO_01</module>
         <module>2.SocketIO_02</module>
+        <module>3.netty_deploy</module>
     </modules>
     <packaging>pom</packaging>
 
