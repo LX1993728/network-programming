@@ -26,6 +26,9 @@ public class Client {
 
         // buf
         cf1.channel().writeAndFlush(Unpooled.copiedBuffer("777".getBytes()));
+        cf1.channel().writeAndFlush(Unpooled.copiedBuffer("777".getBytes()));
+        cf1.channel().writeAndFlush(Unpooled.copiedBuffer("777".getBytes()));
+        cf1.channel().writeAndFlush(Unpooled.copiedBuffer("777".getBytes()));
 
         cf1.channel().closeFuture().sync();
         workgroup.shutdownGracefully();
